@@ -1,0 +1,95 @@
+body{
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;  
+    background-size: 100%;
+    padding-top: 4em;
+}
+
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.board{
+    
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    text-align: center;
+    border: 8px solid black;
+    width: 35em;
+    height: 35em;
+    position: relative;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#validate-btn , #Start-btn , #solve-btn {
+    font-size: 2em;
+    border-radius: 5px;
+    background-color: floralwhite;
+    border: 3px solid rebeccapurple;
+    font-family: 'Playfair Display', serif;
+    margin: 1%;
+    white-space: nowrap;
+
+}
+
+#f1{  
+    font-family: 'Playfair Display', serif;
+    margin-top: 0.9em;
+    font-size: 2.3em;
+    text-align: center;
+}
+
+#timeleft{
+    display: flex;
+    font-size: 3em;
+    text-align: center;
+    
+}
+
+
+
+
+.Input_common_class{
+    font-family: 'Noto Sans JP', sans-serif;
+    position: relative;
+    width: 90%;
+    height: 90%;  
+    text-align: center;
+    border: 1px solid black;
+    font-size: 2.46em;
+}
+
+.row1:nth-child(3n+0) ,.row2:nth-child(3n+0) , .row3:nth-child(3n+0) ,
+.row4:nth-child(3n+0) ,.row5:nth-child(3n+0) ,.row6:nth-child(3n+0) ,
+.row7:nth-child(3n+0) ,.row8:nth-child(3n+0) ,.row9:nth-child(3n+0) 
+{  border-right: 4px solid black; }
+
+.row3 , .row6 , .row9 { border-bottom: 4px solid black; }
+
+
+
+.Input_common_class:disabled{
+    background-color: wheat;
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2.46em;
+}
+
+#final{
+    font-size: 2.4em;
+    text-align: center;
+    margin-top: 0.3em;
+    
+}
+
+.result{
+    display: none;
+}
